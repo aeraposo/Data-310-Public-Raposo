@@ -1,0 +1,13 @@
+1. In the video, First steps in computer vision, Laurence Maroney introduces us to the Fashion MNIST data set and using it to train a neural network in order to teach a computer “how to see.”  One of the first steps towards this goal is splitting the data into two groups, a set of training images and training labels and then also a set of test images and test labels.  Why is this done?  What is the purpose of splitting the data into a training set and a test set?
+
+When creating a model, we generate 4 lists- training data, training labels, testing data, and testing labels. These for list are subsets of the entire dataset and the machine learns by being given the mapping between train data and labels. In other words, it learns to recognize patters that indicate differnt classification. After training is complete, the model is then tested to see if it can match test images to correct labels. The purpose of having distict training and testing data is so that the machiene is tested on datapoints it does not know the answer to.
+
+2. The fashion MNIST example has increased the number of layers in our neural network from 1 in the past example, now to 3.  The last two are .Dense layers that have activation arguments using the relu and softmax functions.  What is the purpose of each of these functions.  Also, why are there 10 neurons in the third and last layer in the neural network.
+
+In the first .Dense layer, the relu function converts negative outputs to 0 so they don’t skew the model training too much. These negative outliers don't have meaning in the context of the model, which is why we do this.
+n the first .Dense layer, the softmax function analyzes the values in the last layer, determines which probability of the data point being in the associated class is highest. In other words, the function determines which class is the most likely answer for each data point.
+The number of neurons in the final layer corresponds to the number of possible outputs/classifications. The machine needs to understand the probability of each possibility in order to make a decision on how to classify a data point.
+
+3. In the past example we used the optimizer and loss function, while in this one we are using the function adam in the optimizer argument and sparse_categorical-crossentropy for the loss argument.  How do the optimizer and loss functions operate to produce model parameters (estimates) within the model.compile() function?
+
+The optimizer and loss functions operate to produce model parameters (estimates) within the model.compile() function by a "guess and check learning process like in last video (using optimizer and loss functions)
