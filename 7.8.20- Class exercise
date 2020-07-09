@@ -14,5 +14,9 @@ The optimizer and loss functions work together using a "guess and check" learnin
 
 4. Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions.
      a. What is the shape of the images training set (how many and the dimension of each)?
-       There are 60,000 images and each image is 28x28 pixels
-     b.
+       (60000, 28, 28), there are 60,000 images and each image is 28x28 pixels.
+     b. What is the length of the labels training set?
+       60,000 labels (0-9) becuase there are 60,000 labeled images in the training set (this does not mean there aren't things labeled the same thing, there are only 10 labels)
+     c. What is the shape of the images test set?
+       (10000, 28, 28), there are 10,000 images and each image is 28x28 pixels.
+     *FOR PARTS D,E,F, SEE PRIVATE REPO*
