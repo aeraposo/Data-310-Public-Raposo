@@ -10,4 +10,9 @@ The number of neurons in the final layer corresponds to the number of possible o
 
 3. In the past example we used the optimizer and loss function, while in this one we are using the function adam in the optimizer argument and sparse_categorical-crossentropy for the loss argument.  How do the optimizer and loss functions operate to produce model parameters (estimates) within the model.compile() function?
 
-The optimizer and loss functions operate to produce model parameters (estimates) within the model.compile() function by a "guess and check learning process like in last video (using optimizer and loss functions)
+The optimizer and loss functions work together using a "guess and check" learning process. The optimizer makes another guess on the relation between the 2 groups might be and the loss function determines how good or bad this guess is (measures accuracy of the guess). The loss function continually reduces the paramenters until we have completed itterating though the training data, improving the training score accuracy as it progresses.
+
+4. Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions.
+     a. What is the shape of the images training set (how many and the dimension of each)?
+       There are 60,000 images and each image is 28x28 pixels
+     b.
