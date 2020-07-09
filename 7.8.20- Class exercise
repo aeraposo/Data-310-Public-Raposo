@@ -19,4 +19,4 @@ The optimizer and loss functions work together using a "guess and check" learnin
        60,000 labels (0-9) becuase there are 60,000 labeled images in the training set (this does not mean there aren't things labeled the same thing, there are only 10 labels)
      c. What is the shape of the images test set?
        (10000, 28, 28), there are 10,000 images and each image is 28x28 pixels.
-     *FOR PARTS D,E,F, SEE PRIVATE REPO*
+     [*FOR PARTS D,E,F, CLICK HERE*](https://github.com/aeraposo/Data-310-Public-Raposo/blob/master/7.8.20%20class%20exercise%20sript.py)
