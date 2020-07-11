@@ -6,7 +6,8 @@
   
 3. In “text classification with preprocessed text” you produced a graph of training and validation loss.  Add the graph to this response and provide a brief explanation.
   This figure shows that as the model is trained (as # of epochs increases, training accuracy increases), it becomes more accurate at predicting the correct classification for data points it hasn't seen yet so loss, a measure of testing error, decreases (validation loss decreases). This makes sense because as the machine "sees" more examples, it gets a better idea of what its looking for each classification and makes fewer misclassifications/mistakes. It also appears that validation loss begins leveling off at arround 6 epochs.
-
+  LINK TO GRAPH (LOSS): https://github.com/aeraposo/Data-310-Public-Raposo/blob/master/7.9.20-%20text%20classification%20with%20preprocessed%20text%20(loss).png
   
 4. Likewise do the same for the training and validation accuracy graph.
   This figure shows that as the model is trained (as # of epochs increases, training accuracy increases), it becomes more accurate at predicting the correct classification for data points it hasn't seen yet (validation accuracy increases). This makes sense because as the machine "sees" more examples, it gets a better idea of what its looking for each classification and makes more correct classifications. It also appears that validation accuracy begins leveling off at arround 6 epochs.
+  LINK TO GRAPH (ACCURACY): https://github.com/aeraposo/Data-310-Public-Raposo/blob/master/7.9.20-%20text%20classification%20with%20preprocessed%20text%20(accuracy).png
