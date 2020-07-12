@@ -1,4 +1,5 @@
 ## Alumni Data Science Meetp-up Summaries
+
 1. We spoke with Ashley Trainor, a W&M alumna and solutions architect at Databricks. She gave us a brief rundown of her career thus far, which included working for NASA and several startups. I asked about hurdles she has faced being a women in data science and what steps she takes to make herself stand out in such a quickly growing industry. She advised me to speak up and to stay ahead of the trends. She recounted having to work twice as hard to get to the same place as her male colleagues.
 
 2. It was really interesting getting to hear from a recent grad (David Allen, a software engineer at Northrop Grumman and past intern of Mr. Lammel, senior director of Market Logic Software, a startup in Germany) vs a not so recent grad (Gregor Lammel) and hear their different perspectives on how the field is changing. I asked about how we should be diversifying our skills to prepare for these changes and learned about language processing code. They advised us to learn the "old stuff" that, often times, old methods are necessary to solve new problems but to stay on top of industry trends and changes to language preferences, etc.
