@@ -20,4 +20,6 @@ The optimizer and loss functions work together using a "guess and check" learnin
      c. What is the shape of the images test set?
        (10000, 28, 28), there are 10,000 images and each image is 28x28 pixels.
        
-     *FOR PARTS D,E,F, SEE PRIVATE REPO*
+     *FOR SCRIPT OF PARTS D,E,F, SEE PRIVATE REPO*
+     
+     LINK TO PLOT: https://github.com/aeraposo/Data-310-Public-Raposo/blob/master/Number%20plot.png
