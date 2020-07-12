@@ -7,4 +7,4 @@
 3. What limitations or improvements might you include in order to improve your proposed design?
   The camera angle was a limitation in many of the videos I tested the model on. In the future, the design could be improved with an input of the camera angle and height that would scale the number pixels that represent 6 feet in different areas of the frame. Additionally, videos could be captured from directly above to reduce the issue of perspective in determining peoples' locations relative to the camera.
 
-LINK TO VIDEO: https://youtu.be/knJoXKvYCaU
+<br /> LINK TO VIDEO: https://youtu.be/knJoXKvYCaU
