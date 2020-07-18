@@ -14,7 +14,9 @@ The second image I used to create this piece was an image of a circuit board. Th
 **My Design**
 <br/> Below are two possibilities of how my art could be displayed on a shirt. Across the top of my art, I wrote "Jump Start Data Science 2020" (which can be changed). I wrote this in the same font that is used in PyCharm and Jupyter Notebook in reference to the many hours we spend on either platform. I also rounded the edges of the image for a more clean finish.
 <br/>
+<br/>
 ![Designs](https://aeraposo.github.io/Data-310-Public-Raposo/shirt_final.png)
+<br/>
 <br/>
 <br/>
 ![Logo](https://aeraposo.github.io/Data-310-Public-Raposo/shirt_logo.jpg)
@@ -25,7 +27,11 @@ The second image I used to create this piece was an image of a circuit board. Th
 ![input images](https://aeraposo.github.io/Data-310-Public-Raposo/input_images.png)
 <br/>One of my other favorite outputs was created when I ran the image of wren with the circuit board with just 1 epoch and 10 steps. It looks like the image was painted.
 <br/>![Painted wren](https://aeraposo.github.io/Data-310-Public-Raposo/run_1.png)
-<br/><br/>
-I also had the chance to play around with the DeepDream implementation of this program. After performing this on my above art, I didn't like the results so I decided to try it with an image of one of my own plants. Below is an image of my plant (a sanseveria or snake plant) before and after applying DeepDream.
+<br/>
+<br/>
+**DeepDream**
+<br/>I also had the chance to play around with the DeepDream implementation of this program. After performing this on my above art, I didn't like the results so I decided to try it with an image of one of my own plants. Below is an image of my plant (a sanseveria or snake plant) before and after applying DeepDream.
+<br/>
+<br/>
 ![Deep dream plant](https://aeraposo.github.io/Data-310-Public-Raposo/plants.png)
 
