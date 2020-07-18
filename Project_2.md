@@ -16,7 +16,7 @@
 <br/>   My initial 'stylized image' that the program produced was simply a blue version of wren. I liked the abstractness of the image and later decided to run this image with the circuit board, which ended up producing my final piece.<br/>
 ![input images](https://aeraposo.github.io/Data-310-Public-Raposo/input_images.png)
 <br/>   One of my other favorite outputs was created when I ran the image of wren with the circuit board with just 1 epoch and 10 steps. It looks like the image was painted.
-<br/>![Painted wren](https://aeraposo.github.io/Data-310-Public-Raposo/run_1.png)<br/<br/>
+<br/>![Painted wren](https://aeraposo.github.io/Data-310-Public-Raposo/run_1.png)<br/><br/>
 **DeepDream**
 <br/>   I also had the chance to play around with the DeepDream implementation of this program. After performing this on my above art, I didn't like the results so I decided to try it with an image of one of my own plants. Below is an image of my plant (a sanseveria or snake plant) before and after applying DeepDream.<br/><br/>
 ![Deep dream plant](https://aeraposo.github.io/Data-310-Public-Raposo/plants.png)
