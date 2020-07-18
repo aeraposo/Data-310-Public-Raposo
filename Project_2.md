@@ -6,8 +6,16 @@ As evident from the above images, my piece went through some dramatic changes as
 ![Final](https://aeraposo.github.io/Data-310-Public-Raposo/run_2.png)
 <br/> On a more personal note, William and Mary and the Jump Start program are both very important to me, which I sought to convey in my piece. One of the trademarks of the College is the Wren building. At a ripe ~320 years old, the Wren building has weathered it all, give or take a few fires, standing the test of time day after day. Similarly, students of the Jump Start program have powered through the program, standing an analogous test of time. The Wren building not only serves as a symbol of triumph and determination but also as a reminder of the importance of community. Celebrations such as Eule log, Wren 10s, and Convocation all revolve around community and appropiatly take place at Wren. The overwhelming sense of community akrewed though this program, after persisting through the challenges presented by the pandemic and rallying when feeling defeated, are reflected through the symbolism of Wren and its numberous beloved traditions.
 <br/>
+The second image I used to create this piece was an image of a circuit board. The board's wires run in every direction but all converge at some point or another. This is representative of students' paths to the Jump Start program. We have come from different backgrounds, majors, and even countries but came together together for this. We are an imperfect group that sometimes crashes all together but have remained a united team through every twist and turn of this circiut board. The circuit board is the foundation of every computer and, similarly, the Jump Start program is the foundation of our data science careers. No matter where we go next, we will still be tethered to these points of unity that were undoubtably cemented in out lives this summer.
+<br/><br/>
+#**The Design**
+<br/> Below are two possibilities of how my art could be displayed on a shirt. Across the top of my art, I wrote "Jump Start Data Science 2020" (which can be changed). I wrote this in the same font that is used in PyCharm and Jupyter Notebook in reference to the many hours we spend on either platform. I also rounded the edges of the image for a more clean finish.
+<br/>
 ![Design 1](https://aeraposo.github.io/Data-310-Public-Raposo/image.jpg)![Deisgn 2](https://aeraposo.github.io/Data-310-Public-Raposo/back_of_shirt.jpg)
-![Blue WM](https://aeraposo.github.io/Data-310-Public-Raposo/blueWM.png)
-![Circuit](https://aeraposo.github.io/Data-310-Public-Raposo/circuit_pic.png)
+<br/><br/>
+**The Process**
+<br/>As I mentioned above, my artwork went through many renditions before I arrived at the selected image. After settling on an image, I made changes by switching the style and content paths to balance out some of the coloration issues I had. I also changed the number of epochs and the steps per epoch to change the over pronunciation of either image.
+<br/>My initial 'stylized image' that the program produced was simply a blue version of wren. I liked the abstractness of the image and later decided to run this image with the circuit board, which ended up producing my final piece.
+![Blue WM](https://aeraposo.github.io/Data-310-Public-Raposo/blueWM.png)![Circuit](https://aeraposo.github.io/Data-310-Public-Raposo/circuit_pic.png)
 ![Deep dream plant](https://aeraposo.github.io/Data-310-Public-Raposo/plants.png)
 
