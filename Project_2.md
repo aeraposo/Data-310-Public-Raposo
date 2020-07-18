@@ -10,7 +10,7 @@ The second image I used to create this piece was an image of a circuit board. Th
 <br/><br/>
 **The Design**
 <br/> Below are two possibilities of how my art could be displayed on a shirt. Across the top of my art, I wrote "Jump Start Data Science 2020" (which can be changed). I wrote this in the same font that is used in PyCharm and Jupyter Notebook in reference to the many hours we spend on either platform. I also rounded the edges of the image for a more clean finish.
-![Logo](https://aeraposo.github.io/Data-310-Public-Raposo/logo.jpg)
+![Logo](https://aeraposo.github.io/Data-310-Public-Raposo/shirt_logo.jpg)
 <br/>
 ![Designs](https://aeraposo.github.io/Data-310-Public-Raposo/shirt_final.png)
 <br/><br/>
