@@ -17,5 +17,7 @@ The second image I used to create this piece was an image of a circuit board. Th
 <br/>As I mentioned above, my artwork went through many renditions before I arrived at the selected image. After settling on an image, I made changes by switching the style and content paths to balance out some of the coloration issues I had. I also changed the number of epochs and the steps per epoch to change the over pronunciation of either image.
 <br/>My initial 'stylized image' that the program produced was simply a blue version of wren. I liked the abstractness of the image and later decided to run this image with the circuit board, which ended up producing my final piece.
 ![input images](https://aeraposo.github.io/Data-310-Public-Raposo/input_images.png)
+<br/>One of my other favorite outputs was created when I ran the image of wren with the circuit board with just 1 epoch and 10 steps. It looks like the image was painted.
+![Painted wren](https://aeraposo.github.io/Data-310-Public-Raposo/run_1.png)
 ![Deep dream plant](https://aeraposo.github.io/Data-310-Public-Raposo/plants.png)
 
