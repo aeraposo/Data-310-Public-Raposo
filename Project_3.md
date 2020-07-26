@@ -1,6 +1,6 @@
 ## Project 3: "All aboard the struggle bus"<br/>
 ![computer on fire](https://aeraposo.github.io/Data-310-Public-Raposo/mac_fire.jpg)<br/>
-**This isn't my computer but is certainly sounded like this might happen when I was running my CNN!**<br/><br/>
+*(This isn't my computer but it definitely sounded like this might happen when I was running my CNN)*<br/><br/>
 **About the data:**<br/>
 For project 3, we were provided with 10,000 images of Korle Gonno, a town in Accra, Ghana. Each image is 480x400 pixels and contains 3 bytes per pixel. Accra is ~225.7 km^2 so each of the 10,000 images represents 0.02257 km^2 of the area. The images, known as orthophotos, were taken from an aircraft and are of a high resolution (~60cm). For each photo, the approximate population residing within the pictured area was recorded in a csv file, where each entry corresponds to the assigned name of each photo (for example, the population of '1.jpeg' is the first record in the csv file).<br/>
 **The process:**<br/>
@@ -26,15 +26,15 @@ After accounting for an increase in training set size in my model fitting parame
   - **Run 4:** Lastly, I increased the number of convolution and pooling layers to 3 each. I fit this model twice- for the first fit, I used a batch size of 10 and for the second, I used a batch size of 50. Other than these changes, I kept my CNN and other fitting parameters the same.<br/>
 ![run 4(a)](https://aeraposo.github.io/Data-310-Public-Raposo/p3_4.png)<br/>
 
-*Run 4(a)* From my results for run 2, I worried that fitting my model using such small fitting parameters would yield poor results, however, the additional convolution and pooling layers seemed to help! The overall loss (MSE) was just 106.3372 and MAE was 7.5652. Similarly to the graph from run 3, MSE and MSE steadily decreased as training progressed. The maximum and minimum values for MSE and MAE were also considerably lower than in the last run.
-  
-![run 4(a)](https://aeraposo.github.io/Data-310-Public-Raposo/p3_4.png)
+*Run 4(a):* Based on my results for run 2, I worried that fitting my model using such small fitting parameters and larger quantities of data would yield poor results, however, the additional convolution and pooling layers seemed to help avoid the irregularity seen in run 2 results. The overall loss (MSE) was just 106.3372 and MAE was 7.5652. Similarly to the graph from run 3, MSE and MSE steadily decreased as training progressed. The maximum and minimum values for MSE and MAE were also considerably lower than in the last run.<br/>
+*Run 4(b):*
+![run 4(b)](https://aeraposo.github.io/Data-310-Public-Raposo/p3_4b.png)
 
 **Applications:**<br/>
 Although my model was highly innacurate, similar models could be useful in the following ways:<br/>
-- Community growth planning: By imaging large areas and estimating population, community/city growth planners could gauge the number of people imacted my construction, new roads/buildings, and determine where these expansions could be possible. A modified version of this model might also be able to predict vehicular traffic at certain times/places.<br/>
+- Community growth planning: By imaging large areas and estimating population, community/city growth planners could gauge the number of people imacted my construction, new roads/buildings, and determine where these expansions could be possible. A modified version of this model might also be able to predict vehicle traffic at certain times/places.<br/>
 - Population growth: Similarly, this model could be used to monitor population growth over time. This technology could also have applications in surviellence and security of high-traffic areas.<br/>
-- Farming and nature: On large farms, this model could be modified to track livestock. This model could also be adapted to track specific species in the wild- perhaps a way to monitor endangered species without infringing on their habitat. 
+- Farming and nature: On large farms, this model could be modified to track livestock. This model could also be adapted to track specific species in the wild- perhaps a way to monitor endangered species without infringing on their habitat.<br/>
 
 
 **Ways to improve:**<br/>
