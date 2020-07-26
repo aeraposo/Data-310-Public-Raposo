@@ -14,3 +14,4 @@
 9. [7.20.20: Class exercise](https://aeraposo.github.io/Data-310-Public-Raposo/7.20.20-Class_Exercise)
 10. [7.21.20: Class exercise](https://aeraposo.github.io/Data-310-Public-Raposo/7.21.20-Class_Exercise)
 11. [7.22.20: Class exercise](https://aeraposo.github.io/Data-310-Public-Raposo/7.22.20-Class_Exercise)
+12. [Project 3](https://aeraposo.github.io/Data-310-Public-Raposo/Project_3)
