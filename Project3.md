@@ -1,12 +1,20 @@
 ## Project 3: All aboard the struggle bus <br/>
 **About the data:**<br/>
-For project 3, we were provided with 10,000 images of Korle Gonno, a town in Accra, Ghana. 
-
-**The goal:**
-
-
+For project 3, we were provided with 10,000 images of Korle Gonno, a town in Accra, Ghana. Each image is 480x400 pixels and contains 3 bytes per pixel. Accra is ~225.7 km^2 so each of the 10,000 images represents 0.02257 km^2 of the area. The images, known as orthophotos, were taken from an aircraft and are of a high resolution (~60cm). For each photo, the approximate population residing within the pictured area was recorded in a csv file, where each entry corresponds to the assigned name of each photo (for example, the population of '1.jpeg' is the first record in the csv file).<br/>
+**The process:**<br/>
+Using the above dataset, I then built a model that predicts the population that resides in the area pictured in an image. I went about this process in 3 ways with varrying levels of success and run times (hence, "all aboard the struggle bus" became my personal slogan for the weekend). Before I began, I downloaded the labels (population sizes) csv and unpacked the zipfiles containing the images. After moving them into a file with my desired file path, I began my first attempt.<br/>
+- Method 1: In my first attempt, after downloading the necessary libraries, I specified my data directory by using pathlib.Path(my_file_path). After verifying this step had worked by calling .glob on my directory and counting the accessed files, I used os.makedirs, pathlib, and a few other methods to make training and testing directories. I shuffled the images first and added 90% (9,000 images) to training and 10% (1,000 images) to testing. This was a super helpful step in my later attempts becuase it physically moved the images into their own folders with the paths I specified. I then wrote a for loop (seperate ones for training and testing) that paired the integer from each file name with its file path in a list. It appended each of these pairs to a list (making a tuple). I then sorted the list in ascending order by file integer and, in a second for loop, replaced the file integer with its population size specified in the csv. At this point I had 2 tuples (one for training and one for testing), each containing [(population size, image path), ... ] for each image. This is where things got tricky. I tried to replace the file path in the tuples with an array representing the associated image, with little success. Ultimately, I abandoned this method when Professor Frazier sent some helpful code in slack (thank you!).<br/>
+- Method 2: In my second attempt, I made a DNN. After several hours of using the wrong loss funtion, my model ran! This excitement, however, was short lived as my loss was in the several million range. After messing around with the neurons per layer, my results improved and my loss dropped to ~400,000. After consulting my notes from week 2 when we compared the results of the DNN vs CNN on the mnist dataset, I decided that a CNN may have more success. I gave myself a quick pep talk and embarked on the final part of this trilogy.<br/>
+- Method 3: Before building my CNN, I consulted the cats and dogs CNN we made last week. I coppied this CNN and changed out the functions, activations, and number neurons for each layer. In my last dense layer, I selected "linear" as my activation since the model predicts continuous values, however, I removed it after finding no significant differences in scores on smaller test batches. I recall that more convolutional and pooling layers can sometimes yield better results, however, I decided to proceed with just one convolutional and one pooling layer as my last run took 8 hours to compile. I fit my model on different sized subsets of the dataset and adjusted my model accordingly. On several occasions, I made mistakes in the input arguments for model.compile and ran out of data after up to an hour in to the compiling process. After scrupulously rechecking the formula for batch size, epochs, and steps per epoch, I began running the program with increasingly large subsets of the data.
 **Results:**
+Something I quickly realized was the 'Accuracy' was not a helpful metric in evaluating the success of my model. 
 history =model.fit(train_imgs_subset, train_labs_subset, epochs=10, steps_per_epoch = 10, batch_size = 5), 500,5
 loss: 62.9714 - MAE: 7.9354
 history =model.fit(train_imgs_subset, train_labs_subset, epochs=10, steps_per_epoch = 10, batch_size = 5),1000,100
 loss: 877.9531 - MAE: 25.5498 
+history =model.fit(train_imgs_subset, train_labs_subset, epochs=10, steps_per_epoch = 10, batch_size = 100), 1000,100
+loss: 878.0463 - MAE: 25.5515
+
+**Applications:** community growth planning, agriculture/farming, surviellence/security, monitoring population growth
+
+**Ways to improve:** add more convolution and pooling layers
