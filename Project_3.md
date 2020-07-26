@@ -35,8 +35,8 @@ After accounting for an increase in training set size in my model fitting parame
 
 **Applications:** Although my model was highly innacurate, similar models could be useful in the following ways:<br/>
 - *Community growth planning:* By imaging large areas and estimating population, community/city growth planners could gauge the number of people impacted by construction, new roads/buildings, natural disasters, and might use this information to determine where expansions could be possible. A modified version of this model might also be able to predict vehicle traffic at certain times/places.<br/>
-- Population growth: Similarly, this model could be used to monitor population growth over time. This technology could also have applications in surviellence and security of high-traffic areas.<br/>
-- Farming and nature: On large farms, this model could be modified to track livestock. This model could also be adapted to track specific species in the wild- perhaps a way to monitor endangered species without infringing on their habitat or monitor mass migrations.<br/>
+- *Population growth:* Similarly, this model could be used to monitor population growth over time. This technology could also have applications in surviellence and security of high-traffic areas.<br/>
+- *Farming and wild animals:* On large farms, this model could be modified to track livestock. This model could also be adapted to track specific species in the wild- perhaps a way to monitor endangered species without infringing on their habitat or monitor mass migrations.<br/>
 
 
 **Ways to improve:** My PyCharm will not show matplotlib plots, even with simple examples (it has worked in the past but, for lack of better words, it seems insulted by my numberous long model runs) so I produced the above graphs in Google Colab. This definitely limited what plots I was able to make. If I was able, I would have produced plots of validation MSE, MAE, and accuracy. I would have also produced a plot showing the convolutions for an image, similarly to what we did for the mnsit dataset in the class exercise from the 14th.<br/>
