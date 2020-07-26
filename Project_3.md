@@ -27,11 +27,11 @@ After accounting for an increase in training set size in my model fitting parame
   
 ![run 4(a)](https://aeraposo.github.io/Data-310-Public-Raposo/p3_4.png)<br/>
 
-    - *Run 4(a):* Based on my results for run 2, I worried that fitting my model using such small parameters and larger quantities of data would yield poor results, however, the additional convolution and pooling layers seemed to help avoid the irregularity seen in run 2 results. The overall loss (MSE) was just 106.3372 and MAE was 7.5652. Similarly to the graph from run 3, MSE and MAE steadily decreased as training progressed. Additionally, the maximum and minimum values for MSE and MAE were also considerably lower than in the last run.<br/>
+*Run 4(a):* Based on my results for run 2, I worried that fitting my model using such small parameters and larger quantities of data would yield poor results, however, the additional convolution and pooling layers seemed to help avoid the irregularity seen in run 2 results. The overall loss (MSE) was just 106.3372 and MAE was 7.5652. Similarly to the graph from run 3, MSE and MAE steadily decreased as training progressed. Additionally, the maximum and minimum values for MSE and MAE were also considerably lower than in the last run.<br/>
     
 ![run 4(b)](https://aeraposo.github.io/Data-310-Public-Raposo/p3_4b.png)<br/>
     
-    - *Run 4(b):* <br/>
+*Run 4(b):* <br/>
 
 **Applications:** Although my model was highly innacurate, similar models could be useful in the following ways:<br/>
 - *Community growth planning:* By imaging large areas and estimating population, community/city growth planners could gauge the number of people impacted by construction, new roads/buildings, natural disasters, and might use this information to determine where expansions could be possible. A modified version of this model might also be able to predict vehicle traffic at certain times/places.<br/>
