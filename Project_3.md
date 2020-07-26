@@ -1,6 +1,6 @@
 ## Project 3: "All aboard the struggle bus"<br/>
-![computer on fire](https://aeraposo.github.io/Data-310-Public-Raposo/mac_fire.jpg)
-**This isn't my computer but is certainly sounded like this might happen when I was running my CNN!**
+![computer on fire](https://aeraposo.github.io/Data-310-Public-Raposo/mac_fire.jpg)<br/>
+**This isn't my computer but is certainly sounded like this might happen when I was running my CNN!**<br/><br/>
 **About the data:**<br/>
 For project 3, we were provided with 10,000 images of Korle Gonno, a town in Accra, Ghana. Each image is 480x400 pixels and contains 3 bytes per pixel. Accra is ~225.7 km^2 so each of the 10,000 images represents 0.02257 km^2 of the area. The images, known as orthophotos, were taken from an aircraft and are of a high resolution (~60cm). For each photo, the approximate population residing within the pictured area was recorded in a csv file, where each entry corresponds to the assigned name of each photo (for example, the population of '1.jpeg' is the first record in the csv file).<br/>
 **The process:**<br/>
@@ -12,21 +12,26 @@ Using the above dataset, I then built a model that predicts the population that 
 **Results:**
 Something I quickly realized was that 'Accuracy' was not a helpful metric in evaluating the success of my model. This was because this number was often so low that it read '0000000 e0', so I decided to focus on MSE and MAE. MSE is an ancronym for mean squared error, a measure of the average squared distance of outputs/predictions from the true value. MAE stands for mean absolute error is the average ditance between each prediction and the actual value ([source](http://zerospectrum.com/2019/06/02/mae-vs-mse-vs-rmse/)). Both of these measures are used to gauge a model's performance- higher values generally indicate a poor model. Note that distance is >= 0. Next, I will detail four of my more notable CNN outputs.
   - **Run 1:** Before this run, I tried using smaller batches, fewer epochs, and smaller batch sizes. When the MAE and MSE remained high, I opted to increase my parameters. In this run, I used a training batch of 500 images and a testing batch of 50 images. I fit my model using epochs=10, steps_per_epoch = 10, and batch_size = 5. After just a few minutes, I was able to call model.evalute and got loss (MSE): 62.9714,  MAE: 7.9354. Not bad considering I started at over a million for loss! Determined to do better, I made some more changes and tried again. Looking back at these numbers, I'm a little skeptical because they seem a little too good in comparison to my other runs...<br/>
-![run 1](https://aeraposo.github.io/Data-310-Public-Raposo/p3_1.png)
+![run 1](https://aeraposo.github.io/Data-310-Public-Raposo/p3_1.png)<br/>
+As evident in the graphs, MAE and MSE are esentially scaled versions of eachother so their graphs will generally have the same shape. In these cases, MSE will have larger values (in the y direction) becuase the distance between the true values and the predicted values was greater than 1 (if the difference (d) is >1, the squared difference d^2>d and if d<1, d^2<d). In these first graphs, there is a sharp increase in error at 4 epochs. This may suggest overfitting after this point, however, I think this is likely because this run used such small datasets and batch sizes.<br/>
 
   - **Run 2:** Next, I increased my batch size to 1,000 training images and 100 test images. I kept epochs, steps_per_epoch, and batch_size the same and had results in under an hour. This time, loss increased to 877.9531 and MAE to 25.5498. Chalking the decrease in performance up to small batch sizes, I ran the model a third and final time.<br/>
-![run 2](https://aeraposo.github.io/Data-310-Public-Raposo/p3_2.png)
+![run 2](https://aeraposo.github.io/Data-310-Public-Raposo/p3_2.png)<br/>
+These graphs show more irregularity than any other graphs. I think this may be a product of providing a large training dataset, while keeping batch size and other paraments small (so the model couldn't get a cohesive view of the data- its like trying describe what a collection of things look like by seeing a few of them through a straw).<br/>
 
   - **Run 3:** For this run, I reused the 1,000 image training set and 100 image testing set and set epochs=10, steps_per_epoch = 10, and batch_size = 100. I kept these numbers relatively low out of fear for miscalculations resulting in insifficient data. After 8 hours, the following was returned loss: 878.0463, MAE: 25.5515. Saddly, the performance decreased yet again.<br/>
-![run 3](https://aeraposo.github.io/Data-310-Public-Raposo/p3_3.png)
+![run 3](https://aeraposo.github.io/Data-310-Public-Raposo/p3_3.png)<br/>
+After accounting for an increase in training set size in my model fitting parameters, the results looked more promising. Although my overall loss and MAE were higher than in previous runs, the graph shows that the model steadily improved throughout training- the lack of eradic behavior in the graph is a promising sign that the model fit is improving too.<br/> 
 
-  - **Run 4:** Lastly, loss: 106.3372 - MAE: 7.5652
+  - **Run 4:** Lastly, I increased the number of convolution and pooling layers to 3 each. I fit this model twice- for the first fit, I used a batch size of 10 and for the second, I used a batch size of 50. Other than these changes, I kept my CNN and other fitting parameters the same.<br/>
+![run 4(a)](https://aeraposo.github.io/Data-310-Public-Raposo/p3_4.png)<br/>
+
+*Run 4(a)* From my results for run 2, I worried that fitting my model using such small fitting parameters would yield poor results, however, the additional convolution and pooling layers seemed to help! The overall loss (MSE) was just 106.3372 and MAE was 7.5652. Similarly to the graph from run 3, MSE and MSE steadily decreased as training progressed. The maximum and minimum values for MSE and MAE were also considerably lower than in the last run.
   
-  
-- **Remarks about the graphs:** Its interesting how they retained the same general trend
+![run 4(a)](https://aeraposo.github.io/Data-310-Public-Raposo/p3_4.png)
 
 **Applications:**<br/>
-Although my model was highly innacurate, similar models could be very useful in the following ways:
+Although my model was highly innacurate, similar models could be useful in the following ways:<br/>
 - Community growth planning: By imaging large areas and estimating population, community/city growth planners could gauge the number of people imacted my construction, new roads/buildings, and determine where these expansions could be possible. A modified version of this model might also be able to predict vehicular traffic at certain times/places.<br/>
 - Population growth: Similarly, this model could be used to monitor population growth over time. This technology could also have applications in surviellence and security of high-traffic areas.<br/>
 - Farming and nature: On large farms, this model could be modified to track livestock. This model could also be adapted to track specific species in the wild- perhaps a way to monitor endangered species without infringing on their habitat. 
@@ -34,4 +39,4 @@ Although my model was highly innacurate, similar models could be very useful in 
 
 **Ways to improve:**<br/>
 My PyCharm will not show matplotlib plots, even with simple examples so I produced the above in graphs in Google Colab. This definitely limited what plots I was able to make. If I was able, I would have produced plots of validation MSE and MAE and a plot showing the convolutions for an image (I didn't reload the notebook becuase I would have had to rerun the fit, which took 8 hours last time with just 1 convolution).<br/>
-In the future, I would like to add more convolution and pooling layers to see how accuracy would change. This would make a cool graph too (how scores changed over convolutions).
+In the future, I would like to add more convolution and pooling layers to see how accuracy would change. This would make a cool graph too (how scores changed over convolutions). Although this model didn't turn out too well, I learned a lot in the process and would like to try it on other areas of the world and different terrains to see how it performs.
