@@ -44,4 +44,15 @@ After accounting for an increase in training set size in my model fitting parame
 **Ways to improve:** My PyCharm will not show matplotlib plots, even with simple examples (it has worked in the past but, for lack of better words, it seems insulted by my numberous long model runs) so I produced the above graphs in Google Colab. This definitely limited what plots I was able to make. If I was able, I would have produced plots of validation MSE, MAE, and accuracy. I would have also produced a plot showing the convolutions for an image, similarly to what we did for the mnsit dataset in the class exercise from the 14th.<br/>
 In the future, I would like to add more convolution and pooling layers, change the activations, and change the number of neurons per layer, to see how accuracy would change- this would make another interesting graph too (how scores changed over convolutions). Although my model didn't turn out very well, I learned a lot in the process and would like to try it on images of other areas of the world and different terrains to see how it performs.<br/>
 
-![Learning process](https://aeraposo.github.io/Data-310-Public-Raposo/p3_learn.png)
+![Learning process](https://aeraposo.github.io/Data-310-Public-Raposo/p3_learn.png)<br/>
+
+**Conclusion:** After giving my computer a brief reprieve from fitting, I ran the following images through the model. The model's terrible predictive powers shown through as these values are <br/>
+![accra_1](https://aeraposo.github.io/Data-310-Public-Raposo/accra_1.png)<br/>
+Model prediction: 20.085924<br/>
+True value: 36.1680641174316br/>
+![accra_2](https://aeraposo.github.io/Data-310-Public-Raposo/accra_2.png)<br/>
+Model prediction: 18.063229<br/>
+24.4707736968994
+![accra_3](https://aeraposo.github.io/Data-310-Public-Raposo/accra_3.png)<br/>
+Model prediction: 18.373161<br/>
+35.9370880126953
