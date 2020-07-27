@@ -46,13 +46,18 @@ In the future, I would like to add more convolution and pooling layers, change t
 
 ![Learning process](https://aeraposo.github.io/Data-310-Public-Raposo/p3_learn.png)<br/>
 
-**Conclusion:** After giving my computer a brief reprieve from fitting, I ran the following images through the model. The model's terrible predictive powers shown through as these values are <br/>
+**Conclusion:** After giving my computer a brief reprieve from fitting, I ran the following images through the model. Unfortunately, the model's terrible predictive powers shown though.  <br/>
 ![accra_1](https://aeraposo.github.io/Data-310-Public-Raposo/accra_1.png)<br/>
 Model prediction: 20.085924<br/>
-True value: 36.1680641174316br/>
+True value: 36.1680641174316<br/>
 ![accra_2](https://aeraposo.github.io/Data-310-Public-Raposo/accra_2.png)<br/>
 Model prediction: 18.063229<br/>
-24.4707736968994
+True value: 24.4707736968994<br/>
 ![accra_3](https://aeraposo.github.io/Data-310-Public-Raposo/accra_3.png)<br/>
 Model prediction: 18.373161<br/>
-35.9370880126953
+True value: 35.9370880126953<br/>
+It is possible that the model is overfit. This is supported by the fact that the model can seemingly only predict values in a small window (~18-20 based on my limited examples above).<br/>
+Beyond challenges with fitting the model, the data itself also presents some **limitations**, including:<br/>
+- From above, a tall appartment building looks the same as a single family home so the model may be incorrectly determining building size incorrectly.
+- Non living structures may have been detected and falsely contributed pop size (for example, a livestock barn may appear like a large house from above).
+
