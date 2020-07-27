@@ -24,6 +24,8 @@ These graphs show more irregularity than any other graphs. I think this may be a
 After accounting for an increase in training set size in my model fitting parameters, the results looked more promising. Although my overall test loss and MAE were higher than in previous runs, these graphs show that the model steadily improved throughout training- the lack of irregular behavior in the graphs is a promising sign that the model fit is improving too.<br/> 
 
   - *Run 4:* Lastly, I increased the number of convolution and pooling layers to 3 each. I fit this model twice- for the first fit, I used a batch size of 10 and for the second, I used a batch size of 50. Other than these changes, I kept my CNN and other fitting parameters the same.<br/>
+ 
+*Note: After increasing number of epochs for each model, my results changed insignificaly and my accuracy remained at 0.*<br/>
   
 ![run 4(a)](https://aeraposo.github.io/Data-310-Public-Raposo/p3_4.png)<br/>
 
