@@ -63,7 +63,7 @@ In the future, I would like to add more convolution and pooling layers, change t
 *Model prediction:* 18.373161<br/>
 *True value:* 35.9370880126953<br/>
 
-It is possible that the model is overfit. This is supported by my relatively smooth graphs above and the fact that the model can seemingly only predict values in a small window (~18-20 based on my limited examples above). It may also be that the model is underfit because of the small training set, batch sizes, and low epochs. As I was unable to graph validations error/other scores, I am unable to tell which of these it the case. ¯\_(ツ)_/¯ <br/>
+It is possible that the model is overfit. This is supported by my relatively smooth graphs above and the fact that the model can seemingly only predict values in a small window (~18-20 based on my limited examples above). It may also be that the model is underfit because of the small training set, batch sizes, and low epochs. As I was unable to graph validations error/other scores, I am unable to tell which of these it the case.<br/>
 
 Beyond challenges with fitting the model, the data itself also presents some **limitations**, including:<br/>
 - From above, a tall appartment building looks the same as a single family home so the model may be incorrectly determining building size incorrectly.
